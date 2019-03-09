@@ -38,7 +38,7 @@
 
 ​	检查jdk的版本和tomcat版本是否匹配：
 
-![捕获1](C:\Users\Administrator\Desktop\java资料\笔记typora\安装Tomcat+常见错误解决方案\捕获1.PNG)
+![捕获1](https://github.com/Yubao-wss/jsp-servlet/blob/master/%E5%AE%89%E8%A3%85Tomcat/%E6%8D%95%E8%8E%B71.PNG)
 
 ​	如果不匹配可能一闪而过。
 
