@@ -41,19 +41,22 @@ public class ListServlet extends HttpServlet {
             pw.print("<table width = '80%' align='center'>");
             pw.print("<tr>");
             pw.print("<td>");
-            pw.print("编号");
+            pw.print("id");
             pw.print("</td>");
             pw.print("<td>");
-            pw.print("书名");
+            pw.print("book-name");
             pw.print("</td>");
             pw.print("<td>");
-            pw.print("价格");
+            pw.print("price");
             pw.print("</td>");
             pw.print("<td>");
-            pw.print("作者");
+            pw.print("author");
             pw.print("</td>");
             pw.print("<td>");
-            pw.print("出版日期");
+            pw.print("pub-date");
+            pw.print("</td>");
+            pw.print("<td>");
+            pw.print("todo");
             pw.print("</td>");
             pw.print("</tr>");
             if(list != null)
@@ -73,6 +76,9 @@ public class ListServlet extends HttpServlet {
                 pw.print("</td>");
                 pw.print("<td>");
                 pw.print(new SimpleDateFormat("yyyy-MM-dd").format(list.get(i).getPubDate()));
+                pw.print("</td>");
+                pw.print("<td>");
+                pw.print("<a href='selectById?id="+list.get(i).getId()+"'>修改</a><a href='href='selectById?id="+list.get(i).getId()+"'>删除</a>");
                 pw.print("</td>");
                 pw.print("</tr>");
             }
